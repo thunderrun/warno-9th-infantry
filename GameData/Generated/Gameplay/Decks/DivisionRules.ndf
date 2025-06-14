@@ -23718,8 +23718,16 @@ Descriptor_Deck_Division_US_9th_Mot_multi_Rule is TDeckDivisionRule
             UnitDescriptor = $/GFX/Unit/Descriptor_Unit_FOB_US
             AvailableWithoutTransport = True
             MaxPackNumber = 1
-            NumberOfUnitInPack = 1
+            NumberOfUnitInPack = 3
             NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.0, 0.0]
+        ),
+        TDeckUniteRule
+        (
+            UnitDescriptor = $/GFX/Unit/Descriptor_Unit_HEMTT_US
+            AvailableWithoutTransport = True
+            MaxPackNumber = 9
+            NumberOfUnitInPack = 9
+            NumberOfUnitInPackXPMultiplier = [1.0, 0.4, 0.0, 0.0]
         ),
         TDeckUniteRule
         (
@@ -24270,16 +24278,8 @@ Descriptor_Deck_Division_WP_Unternehmen_Zentrum_multi_Rule is TDeckDivisionRule
             UnitDescriptor = $/GFX/Unit/Descriptor_Unit_FOB_DDR
             AvailableWithoutTransport = True
             MaxPackNumber = 1
-            NumberOfUnitInPack = 3
+            NumberOfUnitInPack = 1
             NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.0, 0.0]
-        ),
-        TDeckUniteRule
-        (
-            UnitDescriptor = $/GFX/Unit/Descriptor_Unit_HEMTT_US
-            AvailableWithoutTransport = True
-            MaxPackNumber = 9
-            NumberOfUnitInPack = 9
-            NumberOfUnitInPackXPMultiplier = [1.0, 0.4, 0.0, 0.0]
         ),
         TDeckUniteRule
         (
