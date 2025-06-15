@@ -23209,9 +23209,9 @@ export Gfx_Sniper_M82_US is TemplateInfantryDepictionSquad
 )
 AllWeaponAlternatives_Sniper_M82_US is [
   TDepictionDescriptor( SelectorId = ['MeshAlternative_1'] MeshDescriptor = $/GFX/DepictionResources/Modele_M82_Barrett ),
-  TDepictionDescriptor( SelectorId = ['MeshAlternative_2'] MeshDescriptor = $/GFX/DepictionResources/Modele_M24_Sniper ),
+  TDepictionDescriptor( SelectorId = ['MeshAlternative_2'] MeshDescriptor = $/GFX/DepictionResources/Modele_MANPAD_FIM92 ),
   TDepictionDescriptor( SelectorId = ['MeshAlternative_3'] MeshDescriptor = $/GFX/DepictionResources/Modele_M47_DRAGON_II ),
-  TMeshlessDepictionDescriptor( SelectorId = ['none'] ReferenceMeshForSkeleton = $/GFX/DepictionResources/Modele_M24_Sniper ),
+  TMeshlessDepictionDescriptor( SelectorId = ['none'] ReferenceMeshForSkeleton = $/GFX/DepictionResources/Modele_MANPAD_FIM92 ),
 ]
 AllWeaponSubDepiction_Sniper_M82_US is TemplateAllSubWeaponDepiction
 (
@@ -23224,7 +23224,7 @@ AllWeaponSubDepiction_Sniper_M82_US is TemplateAllSubWeaponDepiction
     ),
     DepictionOperator_WeaponInstantFireInfantry
     (
-      FireEffectTag = ["FireEffect_Sniper_M24"]
+      FireEffectTag = ["FireEffect_MANPAD_FIM92"]
       WeaponShootDataPropertyName = "WeaponShootData_0_2"
     ),
     DepictionOperator_WeaponInstantFireInfantry
@@ -23248,7 +23248,7 @@ TacticDepiction_Sniper_M82_US_Soldier is TemplateInfantryDepictionFactoryTactic
   Selector = InfantrySelectorTactic_00_01
   Alternatives = TacticDepiction_Sniper_M82_US_Alternatives
   SubDepictions = [AllWeaponSubDepiction_Sniper_M82_US, AllWeaponSubDepictionBackpack_Sniper_M82_US]
-  Operators = [DepictionOperator_SkeletalAnimation2_Default(ConditionalTags = [ ('bazooka', 'MeshAlternative_3') ])]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default(ConditionalTags = [ ('bazooka', 'MeshAlternative_2'), ('bazooka', 'MeshAlternative_3') ])]
 )
 TacticDepiction_Sniper_M82_US_Ghost is TemplateInfantryDepictionFactoryGhost
 (
